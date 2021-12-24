@@ -40,7 +40,16 @@ VSCode extension - Live Sass Compiler
 ```
 
 ```scss
-15 times repeat
+// For loop
+@for $i from 1 through 15 {
+  span:nth-child(#{$i}) {
+    top: ($i - 1) * 10 + px;
+    left: ($i - 1) * 10 + px;
+    bottom: ($i - 1) * 10 + px;
+    right: ($i - 1) * 10 + px;
+    animation-delay: ($i - 1) / 10 + s;
+  }
+}
 ```
 
 </details>
