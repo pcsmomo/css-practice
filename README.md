@@ -1,2 +1,46 @@
-# youtube-css
-Youtube Online Tutorials
+# CSS Practice
+
+[Youtube Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
+
+## Goal
+
+CSS Ninja and get used to practice SCSS syntax
+
+## Setup
+
+VSCode extension - Live Sass Compiler
+
+```js
+// .vscode/settings.json
+{
+  "liveSassCompile.settings.formats": [
+    // This is Default.
+    {
+      "format": "expanded",
+      "extensionName": ".css"
+      // "savePath": "~/../css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false
+}
+```
+
+## details
+
+<details open>
+  <summary>Click to Contract/Expend</summary>
+
+### 001
+
+```css
+.loader {
+  transform-style: preserve-3d;
+  transform: perspective(500px) rotateX(60deg);
+}
+```
+
+```scss
+15 times repeat
+```
+
+</details>
