@@ -30,7 +30,7 @@ VSCode extension - Live Sass Compiler
 <details open>
   <summary>Click to Contract/Expend</summary>
 
-### 001
+### 1115. Remake | CSS 3D Wavy Circle Loader Animation Effects
 
 ```css
 .loader {
