@@ -1,9 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -120,4 +122,51 @@ body {
           transform: rotateX(90deg) translateZ(-500px);
   -webkit-filter: blur(20px);
           filter: blur(20px);
+}
+
+.tree div.text span {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(173px);
+          transform: rotateY(calc(90deg * var(--i))) translateZ(173px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #ff4242;
+  font-size: 8em;
+  text-transform: uppercase;
+  line-height: 1em;
+  -webkit-text-stroke: 3px #fff;
+  font-weight: 700;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.tree div.text span:nth-child(1) {
+  font-size: 6em;
+}
+
+.tree div.text span:before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 7px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+  -webkit-text-stroke: 0px #fff;
+  color: rgba(0, 0, 0, 0.1);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
