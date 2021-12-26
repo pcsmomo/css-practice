@@ -97,3 +97,12 @@ body {
           filter: blur(2px);
   text-shadow: -4px 0 2px #000, 8px 0 20px #f00, 8px 0 24px #f00, 8px 0 0 #222, 12px 0 #555, 16px 0 #666, 20px 0 #888, 24px 0 #999;
 }
+
+img {
+  position: absolute;
+  top: -150px;
+  left: 16px;
+  width: 392px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
