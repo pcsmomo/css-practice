@@ -52,4 +52,6 @@ VSCode extension - Live Sass Compiler
 }
 ```
 
+[ionicons - apple logo: open source icons](https://ionic.io/ionicons)
+
 </details>
