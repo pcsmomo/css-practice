@@ -54,4 +54,8 @@ VSCode extension - Live Sass Compiler
 
 [ionicons - apple logo: open source icons](https://ionic.io/ionicons)
 
+### 1848. Smooth Animated Blob using CSS & SVG | Html CSS Blobs Animation Effects
+
+[blobs.app - blob shape generator](https://blobs.app/?e=6&gw=6&se=122369&c=d1d8e0&o=0)
+
 </details>
