@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -74,6 +76,33 @@ body {
   -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
           transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
   /* 300 / 2 = 150 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.cube div span h2 {
+  position: absolute;
+  font-size: 10em;
+  color: #fff;
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+}
+
+.cube div span h2:first-child {
+  -webkit-transform: translateZ(0) translateY(20px);
+          transform: translateZ(0) translateY(20px);
+  color: rgba(0, 0, 0, 0.1);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 .top {
