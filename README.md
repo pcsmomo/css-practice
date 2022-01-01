@@ -60,4 +60,8 @@ VSCode extension - Live Sass Compiler
 
 [blobs.app - blob shape generator](https://blobs.app/?e=6&gw=6&se=122369&c=d1d8e0&o=0)
 
+### 1837. Ambient Light Effects | CSS 3D Glowing Cube Animation Effects
+
+[sass maps](https://sass-lang.com/documentation/values/maps)
+
 </details>

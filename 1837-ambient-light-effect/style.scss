@@ -27,6 +27,8 @@ body {
   position: relative;
   width: $cubeOneSize + px;
   height: $cubeOneSize + px;
+  top: 0px;
+  left: 0px;
   transform-style: preserve-3d;
   transform: rotateX(-30deg);
   animation: animate 4s linear infinite;
@@ -97,9 +99,114 @@ body {
   width: $cubeOneSize + px;
   height: $cubeOneSize + px;
   background: $cubeOneColor;
-  transform: translateZ(-380px);
+  transform: translateZ($cubeOneSize * -1.8 + px);
   filter: blur(20px);
   box-shadow: 0 0 120px rgba($cubeOneColor, 0.2),
     0 0 200px rgba($cubeOneColor, 0.4), 0 0 300px rgba($cubeOneColor, 0.6),
     0 0 400px rgba($cubeOneColor, 0.8), 0 0 500px rgba($cubeOneColor, 1);
+}
+
+// Example for simple list
+$meeting-room-colors: (
+  Neumann: '#002366',
+  Turing: '#FF0000',
+  Lovelace: '#00BFFF',
+  Shared: '#00FF00',
+  Chilling: '#FF1493',
+);
+$color-alpha: EE;
+
+@each $name, $color in $meeting-room-colors {
+  .#{$name} {
+    background-color: #{$color}#{$color-alpha};
+  }
+}
+
+// https://itnext.io/advanced-use-of-sass-maps-bd5a47ca0d1a
+// Example for nested map
+// $cube-colors: (
+//   'one': (
+//     'color': #00ff00,
+//     'gradient': #00ec00,
+//     'size': 300,
+//   ),
+//   'two': (
+//     'color': #0000ff,
+//     'gradient': #404061,
+//     'size': 200,
+//   ),
+// );
+
+// @each $name, $item in $cube-colors {
+//   .cube#{$name} {
+//     background-color: map-get($item, 'color');
+//   }
+// }
+
+// Example of map list
+$cube-colors: (
+  (
+    'color': #00ff00,
+    'gradient': #00ec00,
+    'size': 300,
+    'top': 0,
+    'left': 0,
+    'aniDuration': 4s,
+  ),
+  (
+    'color': #0000ff,
+    'gradient': #0000ec,
+    'size': 200,
+    'top': -350,
+    'left': 150,
+    'aniDuration': 3s,
+  ),
+  (
+    'color': #ff0000,
+    'gradient': #ec0000,
+    'size': 250,
+    'top': 150,
+    'left': 50,
+    'aniDuration': 5s,
+  )
+);
+
+@each $item in $cube-colors {
+  $index: index($cube-colors, $item);
+
+  .cube:nth-child(#{$index}) {
+    width: map-get($item, 'size') + px;
+    height: map-get($item, 'size') + px;
+    top: map-get($item, 'top') + px;
+    left: map-get($item, 'left') + px;
+    animation: animate map-get($item, 'aniDuration') linear infinite;
+
+    & div span {
+      background: linear-gradient(#151515, map-get($item, 'gradient'));
+      transform: rotateY(calc(90deg * var(--i)))
+        translateZ(map-get($item, 'size') / 2 + px);
+
+      & h2 {
+        font-size: map-get($item, 'size') / 30 + em;
+      }
+    }
+
+    & .top {
+      width: map-get($item, 'size') + px;
+      height: map-get($item, 'size') + px;
+      transform: rotateX(90deg) translateZ(map-get($item, 'size') / 2 + px);
+
+      &::before {
+        width: map-get($item, 'size') + px;
+        height: map-get($item, 'size') + px;
+        background: map-get($item, 'color');
+        transform: translateZ(map-get($item, 'size') * -1.3 + px);
+        box-shadow: 0 0 120px rgba(map-get($item, 'color'), 0.2),
+          0 0 200px rgba(map-get($item, 'color'), 0.4),
+          0 0 300px rgba(map-get($item, 'color'), 0.6),
+          0 0 400px rgba(map-get($item, 'color'), 0.8),
+          0 0 500px rgba(map-get($item, 'color'), 1);
+      }
+    }
+  }
 }
