@@ -123,7 +123,7 @@ body {
   left: 0;
   width: 300px;
   height: 300px;
-  background: #00ff00;
+  background: #0f0;
   -webkit-transform: translateZ(-380px);
           transform: translateZ(-380px);
   -webkit-filter: blur(20px);
