@@ -64,4 +64,8 @@ VSCode extension - Live Sass Compiler
 
 [sass maps](https://sass-lang.com/documentation/values/maps)
 
+### 1794. Quick CSS Loading Animation | Html CSS Animation Effects
+
+[Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/)
+
 </details>
