@@ -68,4 +68,13 @@ VSCode extension - Live Sass Compiler
 
 [Fancy Border Radius Generator](https://9elements.github.io/fancy-border-radius/)
 
+### 1701. CSS Glassmorphism Product Card Slider UI Design | Html CSS and Javascript
+
+```css
+* {
+  background-attachment: fixed;
+  backdrop-filter: blur(4px);
+}
+```
+
 </details>
