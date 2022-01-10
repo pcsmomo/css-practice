@@ -77,4 +77,13 @@ VSCode extension - Live Sass Compiler
 }
 ```
 
+### 1690. Parallax Scrolling Website | How to Make Website using Html CSS & Javascript
+
+```css
+section img#moon {
+  mix-blend-mode: screen;
+  white-space: nowrap;
+}
+```
+
 </details>
