@@ -86,4 +86,12 @@ section img#moon {
 }
 ```
 
+### 1808. Create Responsive Admin Dashboard
+
+```css
+.details .table {
+  border-collapse: collapse;
+}
+```
+
 </details>
