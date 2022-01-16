@@ -92,6 +92,11 @@ section img#moon {
 .details .table {
   border-collapse: collapse;
 }
+.main.active .toggle {
+  left: initial;
+}
 ```
+
+[CSS initial Keyword - W3schools](https://www.w3schools.com/cssref/css_initial.asp)
 
 </details>
