@@ -262,6 +262,26 @@
   color: var(--white);
 }
 
+// charts
+.graphBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  min-height: 200px;
+}
+
+.graphBox .box {
+  position: relative;
+  background: var(--white);
+  padding: 20px;
+  width: 100%;
+  box-shadow: var(--box-shadow1);
+  border-radius: 20px;
+}
+
 // details
 .details {
   position: relative;
@@ -447,6 +467,10 @@
   }
   .main.active {
     left: 300px;
+  }
+  .graphBox {
+    grid-template-columns: 1fr;
+    height: auto;
   }
   .cardBox {
     grid-template-columns: repeat(2, 1fr);

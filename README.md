@@ -99,4 +99,8 @@ section img#moon {
 
 [CSS initial Keyword - W3schools](https://www.w3schools.com/cssref/css_initial.asp)
 
+### 1811. Chart JS Integration | Responsive Admin Dashboard
+
+[Chart JS](https://www.chartjs.org/)
+
 </details>

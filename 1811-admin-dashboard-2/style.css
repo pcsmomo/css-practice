@@ -285,6 +285,28 @@
   color: var(--white);
 }
 
+.graphBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  min-height: 200px;
+}
+
+.graphBox .box {
+  position: relative;
+  background: var(--white);
+  padding: 20px;
+  width: 100%;
+  -webkit-box-shadow: var(--box-shadow1);
+          box-shadow: var(--box-shadow1);
+  border-radius: 20px;
+}
+
 .details {
   position: relative;
   width: 100%;
@@ -480,6 +502,11 @@
   }
   .main.active {
     left: 300px;
+  }
+  .graphBox {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: auto;
   }
   .cardBox {
     -ms-grid-columns: (1fr)[2];

@@ -15,7 +15,15 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
+    <!-- Chart JS -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"
+    ></script>
+
+    <!-- my code -->
     <script defer src="script.js"></script>
+    <script defer src="my_chart.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Responsive Admin Dashboard | Redesign</title>
   </head>
@@ -140,11 +148,21 @@
           <div class="card">
             <div>
               <div class="numbers">$7,842</div>
-              <div class="cardName">Erarnings</div>
+              <div class="cardName">Earnings</div>
             </div>
             <div class="iconBox">
               <ion-icon name="cash-outline"></ion-icon>
             </div>
+          </div>
+        </div>
+
+        <!-- Add Chart -->
+        <div class="graphBox">
+          <div class="box">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="box">
+            <canvas id="earning"></canvas>
           </div>
         </div>
 
