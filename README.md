@@ -103,4 +103,16 @@ section img#moon {
 
 [Chart JS](https://www.chartjs.org/)
 
+### 1866. Thanos | Image Distortion Effect using Html CSS & Anime.js
+
+```css
+.container .block {
+  background-attachment: fixed;
+}
+```
+
+- [background-attachment - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
+- [Unsplash Random Images](https://source.unsplash.com/1600x900/?avengers)
+- [Anime JS - timeline](https://animejs.com/documentation/#timelineBasics)
+
 </details>
