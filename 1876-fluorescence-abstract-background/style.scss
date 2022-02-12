@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #131313;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 250vh;
+  background: #fff;
+  box-shadow: inset -10px 0 40px rgba(0, 0, 0, 1),
+    inset 10px 0 40px rgba(0, 0, 0, 1),
+    inset -10px 0 10px rgba(255, 255, 255, 0.25),
+    inset 10px 0 10px rgba(255, 255, 255, 0.25), 0 0 50px rgba(0, 0, 0, 1);
+}
+
+// https://sass-lang.com/documentation/at-rules/control/each#destructuring
+// @each with destructuring
+$layers: 1 #6dff73 translate(-50%, -50%) rotate(45deg) 11 animate,
+  2 #db0aff translate(-50%, -38%) rotate(45deg) 3 animate_two,
+  3 #03a9f4 translate(-50%, -62%) rotate(45deg) 3 animate,
+  4 #ffc107 translate(-50%, -50%) rotate(-45deg) 12 animate_two,
+  5 #e91e63 translate(-50%, -38%) rotate(-45deg) 10 animate,
+  6 #0f0 translate(-50%, -62%) rotate(-45deg) 10 animate_two;
+
+@each $index, $color, $trans, $rotate, $zIndex, $anim in $layers {
+  .layer.layer#{$index} {
+    background: #222
+      radial-gradient($color 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: $trans $rotate;
+    z-index: $zIndex;
+    animation: $anim 2s linear infinite;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 35px -35px;
+  }
+}
+
+@keyframes animate_two {
+  0% {
+    background-position: 35px -35px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
