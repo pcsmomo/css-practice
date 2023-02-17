@@ -25,6 +25,8 @@ VSCode extension - Live Sass Compiler
 }
 ```
 
+And click "Watch sass" on the bottom bar
+
 ## details
 
 <details open>
