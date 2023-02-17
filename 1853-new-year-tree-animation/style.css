@@ -3,21 +3,14 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: #e8ffe8;
 }
@@ -27,54 +20,35 @@ body {
   top: -150px;
   width: 300px;
   height: 300px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: rotateX(-20deg) rotateY(30deg);
-          transform: rotateX(-20deg) rotateY(30deg);
-  -webkit-animation: animate 6s linear infinite;
-          animation: animate 6s linear infinite;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(30deg);
+  animation: animate 6s linear infinite;
 }
 
 .tree::before {
-  content: '⭐️';
+  content: "⭐️";
   position: absolute;
   font-size: 4em;
   top: -110px;
   left: calc(50% - 32px);
 }
 
-@-webkit-keyframes animate {
-  0% {
-    -webkit-transform: rotateX(-20deg) rotateY(360deg);
-            transform: rotateX(-20deg) rotateY(360deg);
-  }
-  100% {
-    -webkit-transform: rotateX(-20deg) rotateY(0deg);
-            transform: rotateX(-20deg) rotateY(0deg);
-  }
-}
-
 @keyframes animate {
   0% {
-    -webkit-transform: rotateX(-20deg) rotateY(360deg);
-            transform: rotateX(-20deg) rotateY(360deg);
+    transform: rotateX(-20deg) rotateY(360deg);
   }
   100% {
-    -webkit-transform: rotateX(-20deg) rotateY(0deg);
-            transform: rotateX(-20deg) rotateY(0deg);
+    transform: rotateX(-20deg) rotateY(0deg);
   }
 }
-
 .tree div {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: translateY(calc(100px * var(--j)));
-          transform: translateY(calc(100px * var(--j)));
+  transform-style: preserve-3d;
+  transform: translateY(calc(100px * var(--j)));
 }
 
 .tree div.top span {
@@ -83,15 +57,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#69c069), to(#77dd77));
   background: linear-gradient(90deg, #69c069, #77dd77);
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  border-bottom: 10px solid #00000019;
-  -webkit-transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(173px);
-          transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(173px);
+  transform-origin: bottom;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.0980392157);
+  transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(173px);
 }
 
 .tree div.bottom span {
@@ -100,13 +71,10 @@ body {
   left: calc(50% - 30px);
   width: 60px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#bb4622), to(#df7214));
   background: linear-gradient(90deg, #bb4622, #df7214);
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  border-bottom: 10px solid #00000019;
-  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(30px);
-          transform: rotateY(calc(90deg * var(--i))) translateZ(30px);
+  transform-origin: bottom;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.0980392157);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(30px);
 }
 
 .shadow {
@@ -115,13 +83,10 @@ body {
   left: 0;
   width: 300px;
   height: 300px;
-  background: #0002;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: rotateX(90deg) translateZ(-500px);
-          transform: rotateX(90deg) translateZ(-500px);
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
+  background: rgba(0, 0, 0, 0.1333333333);
+  transform-style: preserve-3d;
+  transform: rotateX(90deg) translateZ(-500px);
+  filter: blur(20px);
 }
 
 .tree div.text span {
@@ -130,27 +95,18 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(173px);
-          transform: rotateY(calc(90deg * var(--i))) translateZ(173px);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform-origin: bottom;
+  transform: rotateY(calc(90deg * var(--i))) translateZ(173px);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
   color: #ff4242;
   font-size: 8em;
   text-transform: uppercase;
   line-height: 1em;
   -webkit-text-stroke: 3px #fff;
   font-weight: 700;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .tree div.text span:nth-child(1) {
@@ -161,12 +117,9 @@ body {
   content: attr(data-text);
   position: absolute;
   bottom: 7px;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transform: rotateX(-90deg);
   -webkit-text-stroke: 0px #fff;
   color: rgba(0, 0, 0, 0.1);
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  filter: blur(5px);
 }

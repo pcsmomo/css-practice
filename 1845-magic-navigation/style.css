@@ -2,9 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -12,15 +11,9 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: var(--clr);
 }
@@ -30,21 +23,13 @@ body {
   height: 70px;
   background: #fff;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
 }
 
 .navigation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 350px;
 }
@@ -59,19 +44,10 @@ body {
 
 .navigation ul li a {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   text-align: center;
   font-weight: 500;
@@ -83,14 +59,12 @@ body {
   line-height: 75px;
   font-size: 1.5em;
   text-align: center;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   color: var(--clr);
 }
 
 .navigation ul li.active a .icon {
-  -webkit-transform: translateY(-32px);
-          transform: translateY(-32px);
+  transform: translateY(-32px);
 }
 
 .navigation ul li a .text {
@@ -99,17 +73,14 @@ body {
   font-weight: 400;
   font-size: 0.75em;
   letter-spacing: 0.05em;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 .navigation ul li.active a .text {
   opacity: 1;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  transform: translateY(10px);
 }
 
 .indicator {
@@ -120,12 +91,11 @@ body {
   background: #29fd53;
   border-radius: 50%;
   border: 6px solid var(--clr);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .indicator::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: -22px;
@@ -133,12 +103,11 @@ body {
   height: 20px;
   background: transparent;
   border-top-right-radius: 20px;
-  -webkit-box-shadow: 0px -10px 0 0 var(--clr);
-          box-shadow: 0px -10px 0 0 var(--clr);
+  box-shadow: 0px -10px 0 0 var(--clr);
 }
 
 .indicator::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: -22px;
@@ -146,31 +115,25 @@ body {
   height: 20px;
   background: transparent;
   border-top-left-radius: 20px;
-  -webkit-box-shadow: 0px -10px 0 0 var(--clr);
-          box-shadow: 0px -10px 0 0 var(--clr);
+  box-shadow: 0px -10px 0 0 var(--clr);
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
 }
 
 .navigation ul li:nth-child(2).active ~ .indicator {
-  -webkit-transform: translateX(70px);
-          transform: translateX(70px);
+  transform: translateX(70px);
 }
 
 .navigation ul li:nth-child(3).active ~ .indicator {
-  -webkit-transform: translateX(140px);
-          transform: translateX(140px);
+  transform: translateX(140px);
 }
 
 .navigation ul li:nth-child(4).active ~ .indicator {
-  -webkit-transform: translateX(210px);
-          transform: translateX(210px);
+  transform: translateX(210px);
 }
 
 .navigation ul li:nth-child(5).active ~ .indicator {
-  -webkit-transform: translateX(280px);
-          transform: translateX(280px);
+  transform: translateX(280px);
 }

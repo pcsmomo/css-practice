@@ -2,69 +2,39 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'poppins';
+  box-sizing: border-box;
+  font-family: "poppins";
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: #222;
 }
 
 .container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
 }
 
 .container .cigarette {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-animation: animate 15s linear infinite;
-          animation: animate 15s linear infinite;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    -webkit-transform: perspective(1000px) rotateX(0deg);
-            transform: perspective(1000px) rotateX(0deg);
-  }
-  100% {
-    -webkit-transform: perspective(1000px) rotateX(360deg);
-            transform: perspective(1000px) rotateX(360deg);
-  }
+  transform-style: preserve-3d;
+  animation: animate 15s linear infinite;
 }
 
 @keyframes animate {
   0% {
-    -webkit-transform: perspective(1000px) rotateX(0deg);
-            transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateX(0deg);
   }
   100% {
-    -webkit-transform: perspective(1000px) rotateX(360deg);
-            transform: perspective(1000px) rotateX(360deg);
+    transform: perspective(1000px) rotateX(360deg);
   }
 }
-
 .container .cigarette span {
   position: absolute;
   color: #fff;
@@ -73,11 +43,9 @@ body {
   text-transform: uppercase;
   line-height: 0.76em;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-  -webkit-transform: translate(-50%, -50%) rotateX(calc(var(--i) * 36deg)) translateZ(25px);
-          transform: translate(-50%, -50%) rotateX(calc(var(--i) * 36deg)) translateZ(25px);
+  transform: translate(-50%, -50%) rotateX(calc(var(--i) * 36deg)) translateZ(25px);
   background: rgba(0, 0, 0, 0.25);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .container .cigarette span i {
@@ -86,15 +54,14 @@ body {
 }
 
 .container .cigarette span i:first-child:after {
-  content: 'L';
+  content: "L";
   color: #ccc;
   text-transform: lowercase;
 }
 
 .container .cigarette span i:last-child {
   color: #f00;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
   text-shadow: -4px 0 2px #000, 8px 0 20px #f00, 8px 0 24px #f00, 8px 0 0 #222, 12px 0 #555, 16px 0 #666, 20px 0 #888, 24px 0 #999;
 }
 
@@ -103,6 +70,5 @@ img {
   top: -150px;
   left: 16px;
   width: 392px;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }

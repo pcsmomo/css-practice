@@ -2,21 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: #050505;
 }
@@ -27,44 +20,26 @@ body {
   height: 300px;
   top: 0px;
   left: 0px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: rotateX(-30deg);
-          transform: rotateX(-30deg);
-  -webkit-animation: animate 4s linear infinite;
-          animation: animate 4s linear infinite;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    -webkit-transform: rotateX(-30deg) rotateY(0deg);
-            transform: rotateX(-30deg) rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: rotateX(-30deg) rotateY(360deg);
-            transform: rotateX(-30deg) rotateY(360deg);
-  }
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+  animation: animate 4s linear infinite;
 }
 
 @keyframes animate {
   0% {
-    -webkit-transform: rotateX(-30deg) rotateY(0deg);
-            transform: rotateX(-30deg) rotateY(0deg);
+    transform: rotateX(-30deg) rotateY(0deg);
   }
   100% {
-    -webkit-transform: rotateX(-30deg) rotateY(360deg);
-            transform: rotateX(-30deg) rotateY(360deg);
+    transform: rotateX(-30deg) rotateY(360deg);
   }
 }
-
 .cube div {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .cube div span {
@@ -73,38 +48,25 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#00ec00));
   background: linear-gradient(#151515, #00ec00);
-  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
-          transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
-  /* 300 / 2 = 150 */
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px); /* 300 / 2 = 150 */
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
 }
 
 .cube div span h2 {
   position: absolute;
   font-size: 10em;
   color: #fff;
-  -webkit-transform: translateZ(50px);
-          transform: translateZ(50px);
+  transform: translateZ(50px);
 }
 
 .cube div span h2:first-child {
-  -webkit-transform: translateZ(0) translateY(20px);
-          transform: translateZ(0) translateY(20px);
+  transform: translateZ(0) translateY(20px);
   color: rgba(0, 0, 0, 0.1);
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .top {
@@ -114,24 +76,20 @@ body {
   width: 300px;
   height: 300px;
   background: #222;
-  -webkit-transform: rotateX(90deg) translateZ(150px);
-          transform: rotateX(90deg) translateZ(150px);
+  transform: rotateX(90deg) translateZ(150px);
 }
 
 .top::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 300px;
   height: 300px;
   background: #00ff00;
-  -webkit-transform: translateZ(-540px);
-          transform: translateZ(-540px);
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
-  -webkit-box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 0 0 200px rgba(0, 255, 0, 0.4), 0 0 300px rgba(0, 255, 0, 0.6), 0 0 400px rgba(0, 255, 0, 0.8), 0 0 500px lime;
-          box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 0 0 200px rgba(0, 255, 0, 0.4), 0 0 300px rgba(0, 255, 0, 0.6), 0 0 400px rgba(0, 255, 0, 0.8), 0 0 500px lime;
+  transform: translateZ(-540px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 0 0 200px rgba(0, 255, 0, 0.4), 0 0 300px rgba(0, 255, 0, 0.6), 0 0 400px rgba(0, 255, 0, 0.8), 0 0 500px lime;
 }
 
 .Neumann {
@@ -159,36 +117,26 @@ body {
   height: 300px;
   top: 0px;
   left: 0px;
-  -webkit-animation: animate 4s linear infinite;
-          animation: animate 4s linear infinite;
+  animation: animate 4s linear infinite;
 }
-
 .cube:nth-child(1) div span {
-  background: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#00ec00));
   background: linear-gradient(#151515, #00ec00);
-  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
-          transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
 }
-
 .cube:nth-child(1) div span h2 {
   font-size: 10em;
 }
-
 .cube:nth-child(1) .top {
   width: 300px;
   height: 300px;
-  -webkit-transform: rotateX(90deg) translateZ(150px);
-          transform: rotateX(90deg) translateZ(150px);
+  transform: rotateX(90deg) translateZ(150px);
 }
-
 .cube:nth-child(1) .top::before {
   width: 300px;
   height: 300px;
   background: #00ff00;
-  -webkit-transform: translateZ(-390px);
-          transform: translateZ(-390px);
-  -webkit-box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 0 0 200px rgba(0, 255, 0, 0.4), 0 0 300px rgba(0, 255, 0, 0.6), 0 0 400px rgba(0, 255, 0, 0.8), 0 0 500px lime;
-          box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 0 0 200px rgba(0, 255, 0, 0.4), 0 0 300px rgba(0, 255, 0, 0.6), 0 0 400px rgba(0, 255, 0, 0.8), 0 0 500px lime;
+  transform: translateZ(-390px);
+  box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 0 0 200px rgba(0, 255, 0, 0.4), 0 0 300px rgba(0, 255, 0, 0.6), 0 0 400px rgba(0, 255, 0, 0.8), 0 0 500px lime;
 }
 
 .cube:nth-child(2) {
@@ -196,36 +144,26 @@ body {
   height: 200px;
   top: -350px;
   left: 150px;
-  -webkit-animation: animate 3s linear infinite;
-          animation: animate 3s linear infinite;
+  animation: animate 3s linear infinite;
 }
-
 .cube:nth-child(2) div span {
-  background: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#0000ec));
   background: linear-gradient(#151515, #0000ec);
-  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
-          transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
 }
-
 .cube:nth-child(2) div span h2 {
-  font-size: 6.66667em;
+  font-size: 6.6666666667em;
 }
-
 .cube:nth-child(2) .top {
   width: 200px;
   height: 200px;
-  -webkit-transform: rotateX(90deg) translateZ(100px);
-          transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(100px);
 }
-
 .cube:nth-child(2) .top::before {
   width: 200px;
   height: 200px;
   background: #0000ff;
-  -webkit-transform: translateZ(-260px);
-          transform: translateZ(-260px);
-  -webkit-box-shadow: 0 0 120px rgba(0, 0, 255, 0.2), 0 0 200px rgba(0, 0, 255, 0.4), 0 0 300px rgba(0, 0, 255, 0.6), 0 0 400px rgba(0, 0, 255, 0.8), 0 0 500px blue;
-          box-shadow: 0 0 120px rgba(0, 0, 255, 0.2), 0 0 200px rgba(0, 0, 255, 0.4), 0 0 300px rgba(0, 0, 255, 0.6), 0 0 400px rgba(0, 0, 255, 0.8), 0 0 500px blue;
+  transform: translateZ(-260px);
+  box-shadow: 0 0 120px rgba(0, 0, 255, 0.2), 0 0 200px rgba(0, 0, 255, 0.4), 0 0 300px rgba(0, 0, 255, 0.6), 0 0 400px rgba(0, 0, 255, 0.8), 0 0 500px blue;
 }
 
 .cube:nth-child(3) {
@@ -233,34 +171,24 @@ body {
   height: 250px;
   top: 150px;
   left: 50px;
-  -webkit-animation: animate 5s linear infinite;
-          animation: animate 5s linear infinite;
+  animation: animate 5s linear infinite;
 }
-
 .cube:nth-child(3) div span {
-  background: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#ec0000));
   background: linear-gradient(#151515, #ec0000);
-  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(125px);
-          transform: rotateY(calc(90deg * var(--i))) translateZ(125px);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(125px);
 }
-
 .cube:nth-child(3) div span h2 {
-  font-size: 8.33333em;
+  font-size: 8.3333333333em;
 }
-
 .cube:nth-child(3) .top {
   width: 250px;
   height: 250px;
-  -webkit-transform: rotateX(90deg) translateZ(125px);
-          transform: rotateX(90deg) translateZ(125px);
+  transform: rotateX(90deg) translateZ(125px);
 }
-
 .cube:nth-child(3) .top::before {
   width: 250px;
   height: 250px;
   background: #ff0000;
-  -webkit-transform: translateZ(-325px);
-          transform: translateZ(-325px);
-  -webkit-box-shadow: 0 0 120px rgba(255, 0, 0, 0.2), 0 0 200px rgba(255, 0, 0, 0.4), 0 0 300px rgba(255, 0, 0, 0.6), 0 0 400px rgba(255, 0, 0, 0.8), 0 0 500px red;
-          box-shadow: 0 0 120px rgba(255, 0, 0, 0.2), 0 0 200px rgba(255, 0, 0, 0.4), 0 0 300px rgba(255, 0, 0, 0.6), 0 0 400px rgba(255, 0, 0, 0.8), 0 0 500px red;
+  transform: translateZ(-325px);
+  box-shadow: 0 0 120px rgba(255, 0, 0, 0.2), 0 0 200px rgba(255, 0, 0, 0.4), 0 0 300px rgba(255, 0, 0, 0.6), 0 0 400px rgba(255, 0, 0, 0.8), 0 0 500px red;
 }

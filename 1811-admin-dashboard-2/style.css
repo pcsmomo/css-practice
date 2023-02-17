@@ -2,9 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 :root {
@@ -32,7 +31,6 @@
   height: 100%;
   background: var(--blue);
   border-left: 10px solid var(--blue);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
 }
@@ -70,8 +68,6 @@
   position: relative;
   display: block;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
   color: var(--white);
@@ -108,7 +104,7 @@
 /* curve outside */
 .navigation ul li:hover a::before,
 .navigation ul li.hovered a::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: -50px;
@@ -116,14 +112,13 @@
   height: 50px;
   background: transparent;
   border-radius: 50%;
-  -webkit-box-shadow: 35px 35px 0 10px var(--white);
-          box-shadow: 35px 35px 0 10px var(--white);
+  box-shadow: 35px 35px 0 10px var(--white);
   pointer-events: none;
 }
 
 .navigation ul li:hover a::after,
 .navigation ul li.hovered a::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   bottom: -50px;
@@ -131,8 +126,7 @@
   height: 50px;
   background: transparent;
   border-radius: 50%;
-  -webkit-box-shadow: 35px -35px 0 10px var(--white);
-          box-shadow: 35px -35px 0 10px var(--white);
+  box-shadow: 35px -35px 0 10px var(--white);
   pointer-events: none;
 }
 
@@ -142,7 +136,6 @@
   left: 300px;
   min-height: 100vh;
   background: var(--white);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -154,15 +147,9 @@
 .topbar {
   width: 100%;
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 10px;
 }
 
@@ -170,15 +157,9 @@
   position: relative;
   width: 60px;
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 2.5em;
   cursor: pointer;
 }
@@ -234,10 +215,8 @@
   position: relative;
   width: 100%;
   padding: 20px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
@@ -246,15 +225,10 @@
   background: var(--white);
   padding: 30px;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   cursor: pointer;
-  -webkit-box-shadow: var(--box-shadow1);
-          box-shadow: var(--box-shadow1);
+  box-shadow: var(--box-shadow1);
 }
 
 .cardBox .card .numbers {
@@ -289,10 +263,8 @@
   position: relative;
   width: 100%;
   padding: 20px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
   gap: 30px;
   min-height: 200px;
 }
@@ -302,8 +274,7 @@
   background: var(--white);
   padding: 20px;
   width: 100%;
-  -webkit-box-shadow: var(--box-shadow1);
-          box-shadow: var(--box-shadow1);
+  box-shadow: var(--box-shadow1);
   border-radius: 20px;
 }
 
@@ -311,36 +282,26 @@
   position: relative;
   width: 100%;
   padding: 20px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 30px;
   margin-top: 10px;
 }
 
 .details .recentOrders {
   position: relative;
-  display: -ms-grid;
   display: grid;
   min-height: 500px;
   background: var(--white);
   padding: 20px;
-  -webkit-box-shadow: var(--box-shadow1);
-          box-shadow: var(--box-shadow1);
+  box-shadow: var(--box-shadow1);
   border-radius: 20px;
 }
 
 .cardHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .cardHeader h2 {
@@ -435,13 +396,11 @@
 
 .recentCustomers {
   position: relative;
-  display: -ms-grid;
   display: grid;
   min-height: 500px;
   padding: 20px;
   background: var(--white);
-  -webkit-box-shadow: var(--box-shadow1);
-          box-shadow: var(--box-shadow1);
+  box-shadow: var(--box-shadow1);
   border-radius: 20px;
 }
 
@@ -504,20 +463,16 @@
     left: 300px;
   }
   .graphBox {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     height: auto;
   }
   .cardBox {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media screen and (max-width: 768px) {
   .details {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .recentOrders {
     overflow-x: hidden;
@@ -526,11 +481,9 @@
     white-space: nowrap;
   }
 }
-
 @media screen and (max-width: 480px) {
   .cardBox {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .cardHeader h2 {
     font-size: 20px;
@@ -549,7 +502,6 @@
   }
   .toggle {
     z-index: 10001;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   .main.active .toggle {

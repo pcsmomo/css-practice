@@ -2,33 +2,21 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   overflow: hidden;
 }
 
 .planet {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .planet h2 {
@@ -40,32 +28,19 @@ body {
 
 .planet .container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-box-reflect: below 1px linear-gradient(rgba(0, 0, 0, 0.0666666667), rgba(0, 0, 0, 0.2666666667));
 }
 
 .planetEarth {
   position: relative;
   min-width: 50%;
   height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #182357;
 }
 
@@ -74,40 +49,24 @@ body {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  -webkit-animation: animate 4s linear infinite;
-          animation: animate 4s linear infinite;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation: animate 4s linear infinite;
 }
 
 @keyframes animate {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 .planetEarth .loader:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 255, 249, 0.4)));
   background: linear-gradient(to top, transparent, rgba(0, 255, 249, 0.4));
   background-size: 200px 360px;
   background-repeat: no-repeat;
@@ -116,19 +75,17 @@ body {
 }
 
 .planetEarth .loader:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 10px;
   height: 10px;
   background: #00fff9;
   border-radius: 50%;
   z-index: 10;
-  -webkit-box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9, 0 0 40px #00fff9, 0 0 50px #00fff9, 0 0 60px #00fff9, 0 0 70px #00fff9, 0 0 80px #00fff9, 0 0 90px #00fff9, 0 0 100px #00fff9;
-          box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9, 0 0 40px #00fff9, 0 0 50px #00fff9, 0 0 60px #00fff9, 0 0 70px #00fff9, 0 0 80px #00fff9, 0 0 90px #00fff9, 0 0 100px #00fff9;
+  box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9, 0 0 40px #00fff9, 0 0 50px #00fff9, 0 0 60px #00fff9, 0 0 70px #00fff9, 0 0 80px #00fff9, 0 0 90px #00fff9, 0 0 100px #00fff9;
 }
 
 .planetEarth .loader span {
@@ -148,19 +105,8 @@ body {
   background: url(earth.jpg);
   border-radius: 50%;
   background-size: cover;
-  -webkit-box-shadow: inset 0 0 20px #03a9f4, 0 0 120px #03a9f4;
-          box-shadow: inset 0 0 20px #03a9f4, 0 0 120px #03a9f4;
-  -webkit-animation: animateEarth 20s linear infinite;
-          animation: animateEarth 20s linear infinite;
-}
-
-@-webkit-keyframes animateEarth {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 162.5%;
-  }
+  box-shadow: inset 0 0 20px #03a9f4, 0 0 120px #03a9f4;
+  animation: animateEarth 20s linear infinite;
 }
 
 @keyframes animateEarth {
@@ -171,17 +117,12 @@ body {
     background-position: 162.5%;
   }
 }
-
 .planetMars {
   position: relative;
   min-width: 50%;
   height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #192357;
 }
 
@@ -190,20 +131,17 @@ body {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  -webkit-animation: animate 4s linear infinite;
-          animation: animate 4s linear infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation: animate 4s linear infinite;
+  animation-delay: 2s;
 }
 
 .planetMars .loader:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(255, 87, 34, 0.4)));
   background: linear-gradient(to top, transparent, rgba(255, 87, 34, 0.4));
   background-size: 200px 360px;
   background-repeat: no-repeat;
@@ -212,19 +150,17 @@ body {
 }
 
 .planetMars .loader:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 10px;
   height: 10px;
   background: #ff5722;
   border-radius: 50%;
   z-index: 10;
-  -webkit-box-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722, 0 0 50px #ff5722, 0 0 60px #ff5722, 0 0 70px #ff5722, 0 0 80px #ff5722, 0 0 90px #ff5722, 0 0 100px #ff5722;
-          box-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722, 0 0 50px #ff5722, 0 0 60px #ff5722, 0 0 70px #ff5722, 0 0 80px #ff5722, 0 0 90px #ff5722, 0 0 100px #ff5722;
+  box-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722, 0 0 50px #ff5722, 0 0 60px #ff5722, 0 0 70px #ff5722, 0 0 80px #ff5722, 0 0 90px #ff5722, 0 0 100px #ff5722;
 }
 
 .planetMars .loader span {
@@ -244,19 +180,8 @@ body {
   background: url(mars.jpg);
   border-radius: 50%;
   background-size: cover;
-  -webkit-box-shadow: inset 0 0 20px #ff5722, 0 0 120px #ff5722;
-          box-shadow: inset 0 0 20px #ff5722, 0 0 120px #ff5722;
-  -webkit-animation: animateMars 6s linear infinite;
-          animation: animateMars 6s linear infinite;
-}
-
-@-webkit-keyframes animateMars {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: -340px;
-  }
+  box-shadow: inset 0 0 20px #ff5722, 0 0 120px #ff5722;
+  animation: animateMars 6s linear infinite;
 }
 
 @keyframes animateMars {
